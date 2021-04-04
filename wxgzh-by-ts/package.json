@@ -1,0 +1,35 @@
+{
+  "name": "wxgzh-by-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
+    "build-ts": "tsc",
+    "serve": "node ./dist/server.js",
+    "start": "npm run serve",
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/crypto-js": "^4.0.1",
+    "@types/koa": "^2.13.1",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-xml-body": "^2.0.2",
+    "@types/url-parse": "^1.4.3",
+    "@types/xml2js": "^0.4.8",
+    "shelljs": "^0.8.4"
+  },
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-xml-body": "^2.2.0",
+    "url-parse": "^1.5.1",
+    "xml2js": "^0.4.23"
+  }
+}
